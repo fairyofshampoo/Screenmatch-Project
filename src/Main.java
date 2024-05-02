@@ -30,12 +30,26 @@ public class Main {
         }
 
         int loop = 3;
-        for (int i = 0; i < loop; i++) {
+
+        //---- FOR ---
+        /*for (int i = 0; i < loop; i++) {
             Scanner rateInput = new Scanner(System.in);
             System.out.println("Ingresa la nota que le darias a " + name);
             double movieRating = rateInput.nextDouble();
             averageUserRate = averageUserRate + movieRating;
+        }*/
+
+        //---- WHILE ---
+        int i = 0;
+
+        while (i < loop) {
+            Scanner rateInput = new Scanner(System.in);
+            System.out.println("Ingresa la nota que le darias a " + name);
+            double movieRating = rateInput.nextDouble();
+            averageUserRate = averageUserRate + movieRating;
+            i++;
         }
+
         System.out.println("La media de la película " + name +
                 " calculada por el usuario es: " + averageUserRate / loop);
 
